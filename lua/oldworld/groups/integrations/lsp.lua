@@ -29,7 +29,7 @@ return {
     ["@lsp.typemod.class.declaration"] = { fg = p.red },
     ["@lsp.typemod.interface.declaration"] = { fg = p.red },
     ["@lsp.typemod.variable.declaration"] = { fg = p.red },
-    ["@lsp.typemod.property"] = { fg = p.fg },
+    ["@lsp.typemod.property"] = { fg = p.red },
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
