@@ -28,7 +28,7 @@ return {
     ["@lsp.typemod.member.declaration"] = { fg = p.red },
     ["@lsp.typemod.method.declaration"] = { fg = p.red },
     ["@lsp.typemod.class.declaration"] = { fg = p.red },
-    ["@lsp.typemod.interface.declaration"] = { fg = p.red },
+    ["@lsp.typemod.interface.declaration"] = { fg = p.fg },
     ["@lsp.typemod.variable.declaration"] = { fg = p.red },
     ["@lsp.typemod.property"] = {},
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },

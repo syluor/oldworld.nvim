@@ -46,7 +46,7 @@ return {
     ["@type.definition"] = { fg = p.red },
     ["@constructor.javascript"] = { fg = p.red },
     ["@keyword.clojure"] = { fg = u.lighten(p.red, 0.5, p.fg) } + styles.keywords,
-    ["@keyword.import"] = { fg = p.red } + styles.keywords,
+    ["@keyword.import"] = { fg = p.fg } + styles.keywords,
     ["@text.underline"] = { link = "Underlined" },
     ["@text.strong"] = { bold = true },
     ["@text.strikethrough"] = { strikethrough = true },

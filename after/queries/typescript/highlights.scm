@@ -16,16 +16,12 @@
   value: (function_expression)
   (#set! "priority" 115))
 
-; class / interface 定义处的名字走红色；类型用法仍是 @type
+; class 定义处的名字走红色；interface 名字跟类型用法一样走白色
 (class_declaration
   name: (type_identifier) @type.definition
   (#set! "priority" 110))
 
 (abstract_class_declaration
-  name: (type_identifier) @type.definition
-  (#set! "priority" 110))
-
-(interface_declaration
   name: (type_identifier) @type.definition
   (#set! "priority" 110))
 
