@@ -12,11 +12,11 @@ end, config.styles)
 return {
     Comment = { fg = p.subtext3 } + styles.comments, -- any comment
     Constant = { fg = p.fg }, -- any constant
-    String = { fg = p.green }, -- a string constant: "this is a string"
-    Character = { fg = p.green }, -- a character constant: 'p', '\n'
-    Number = { fg = p.magenta }, -- a number constant: 234, 0xff
+    String = { fg = p.fg }, -- a string constant: "this is a string"
+    Character = { fg = p.fg }, -- a character constant: 'p', '\n'
+    Number = { fg = p.fg }, -- a number constant: 234, 0xff
     Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
-    Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
+    Float = { fg = p.fg }, -- a floating point constant: 2.3e10
     Identifier = { fg = p.fg } + styles.identifiers, -- any variable name
     Function = { fg = p.blue } + styles.functions, -- function name (also: methods for classes)
     Statement = { fg = p.fg }, -- any statement
