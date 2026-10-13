@@ -13,7 +13,7 @@ end, config.styles)
 return {
     ["@boolean"] = { fg = p.orange } + styles.booleans,
     ["@constructor"] = { fg = p.subtext3 },
-    ["@constant.builtin"] = { fg = p.yellow },
+    ["@constant.builtin"] = { fg = p.fg },
     ["@keyword.function"] = { fg = p.fg } + styles.functions,
     ["@namespace"] = { fg = p.red, italic = true },
     ["@parameter"] = { fg = p.fg },
