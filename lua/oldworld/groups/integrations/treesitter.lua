@@ -11,7 +11,7 @@ local styles = vim.tbl_map(function(value)
 end, config.styles)
 
 return {
-    ["@boolean"] = { fg = p.orange } + styles.booleans,
+    ["@boolean"] = { fg = p.fg } + styles.booleans,
     ["@constructor"] = { fg = p.subtext3 },
     ["@constant.builtin"] = { fg = p.fg },
     ["@keyword.function"] = { fg = p.fg } + styles.functions,
