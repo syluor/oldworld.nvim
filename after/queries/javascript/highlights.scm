@@ -21,3 +21,24 @@
 (field_definition
   (private_property_identifier) @variable.member.definition
   (#set! "priority" 130))
+
+; class 里赋成函数的字段，当方法定义走蓝色
+(field_definition
+  (property_identifier) @function.method
+  value: (arrow_function)
+  (#set! "priority" 140))
+
+(field_definition
+  (private_property_identifier) @function.method
+  value: (arrow_function)
+  (#set! "priority" 140))
+
+(field_definition
+  (property_identifier) @function.method
+  value: (function_expression)
+  (#set! "priority" 140))
+
+(field_definition
+  (private_property_identifier) @function.method
+  value: (function_expression)
+  (#set! "priority" 140))

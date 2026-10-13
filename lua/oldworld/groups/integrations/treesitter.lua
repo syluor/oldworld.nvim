@@ -39,7 +39,7 @@ return {
     ["@variable.declaration"] = { fg = p.red } + styles.variables,
     ["@variable.member.definition"] = { fg = p.red } + styles.variables,
     ["@function"] = { fg = p.red } + styles.functions,
-    ["@function.method"] = { fg = p.red } + styles.functions,
+    ["@function.method"] = { fg = p.blue } + styles.functions,
     ["@function.call"] = { fg = p.blue } + styles.functions,
     ["@function.method.call"] = { fg = p.blue } + styles.functions,
     ["@function.builtin"] = { fg = p.blue } + styles.functions,
