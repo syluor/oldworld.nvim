@@ -1,5 +1,4 @@
 local p = require("oldworld.palette")
-local u = require("oldworld.utils.color_utils")
 
 return {
     -- LSP Semantic Token Groups
@@ -10,7 +9,7 @@ return {
     ["@lsp.type.enumMember"] = { link = "@constant" },
     ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
     ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
-    ["@lsp.type.interface"] = { fg = p.yellow },
+    ["@lsp.type.interface"] = { fg = p.fg },
     ["@lsp.type.macro"] = { fg = p.magenta },
     ["@lsp.type.keyword"] = { link = "@keyword" },
     ["@lsp.type.namespace"] = { link = "@namespace" },
@@ -24,8 +23,9 @@ return {
     ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = p.error },
     ["@lsp.mod.readonly"] = { link = "@constant" },
     ["@lsp.typemod.function.readonly"] = { fg = p.blue },
-    ["@lsp.typemod.variable.declaration"] = { fg = p.fg },
-    ["@lsp.typemod.property"] = { fg = u.lighten(p.blue, 0.5, p.fg) },
+    ["@lsp.typemod.variable.declaration"] = { fg = p.purple },
+    ["@lsp.typemod.variable.readonly"] = { fg = p.purple },
+    ["@lsp.typemod.property"] = { fg = p.purple },
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
@@ -35,7 +35,7 @@ return {
     ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.operator.injected"] = { link = "@operator" },
     ["@lsp.typemod.string.injected"] = { link = "@string" },
-    ["@lsp.typemod.type.defaultLibrary"] = { fg = p.purple },
+    ["@lsp.typemod.type.defaultLibrary"] = { fg = p.fg },
     ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
     ["@lsp.typemod.variable.injected"] = { link = "@variable" },
     -- Diagnostics
