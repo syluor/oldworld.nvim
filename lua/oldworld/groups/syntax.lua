@@ -17,13 +17,13 @@ return {
     Number = { fg = p.magenta }, -- a number constant: 234, 0xff
     Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
     Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
-    Identifier = { fg = p.red } + styles.identifiers, -- any variable name
+    Identifier = { fg = p.fg } + styles.identifiers, -- any variable name
     Function = { fg = p.blue } + styles.functions, -- function name (also: methods for classes)
     Statement = { fg = p.fg }, -- any statement
     Conditional = { fg = p.blue }, -- if, then, else, endif, switch, etc.
     Repeat = { fg = p.fg }, -- for, do, while, etc.
     Label = { fg = p.fg }, -- case, default, etc.
-    Operator = { fg = p.yellow }, -- sizeof", "+", "*", etc.
+    Operator = { fg = p.fg }, -- sizeof", "+", "*", etc.
     Keyword = { fg = p.fg } + styles.keywords, -- any other keyword
     Exception = { fg = p.fg }, -- try, catch, throw
     PreProc = { fg = p.red }, -- generic Preprocessor
