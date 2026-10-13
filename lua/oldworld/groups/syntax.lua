@@ -17,7 +17,7 @@ return {
     Number = { fg = p.magenta }, -- a number constant: 234, 0xff
     Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
     Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
-    Identifier = { fg = p.purple } + styles.identifiers, -- any variable name
+    Identifier = { fg = p.red } + styles.identifiers, -- any variable name
     Function = { fg = p.blue } + styles.functions, -- function name (also: methods for classes)
     Statement = { fg = p.fg }, -- any statement
     Conditional = { fg = p.blue }, -- if, then, else, endif, switch, etc.
