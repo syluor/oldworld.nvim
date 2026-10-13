@@ -16,7 +16,8 @@ return {
     ["@lsp.type.number"] = { link = "@number" },
     ["@lsp.type.operator"] = { link = "@operator" },
     ["@lsp.type.parameter"] = { link = "@parameter" },
-    ["@lsp.type.property"] = { link = "@property" },
+    -- 不设前景色：否则会盖掉 class 字段定义的红色
+    ["@lsp.type.property"] = {},
     ["@lsp.type.selfKeyword"] = { link = "@variable.builtin" },
     ["@lsp.type.string.rust"] = { link = "@string" },
     ["@lsp.type.typeAlias"] = { link = "@type.definition" },
@@ -29,7 +30,7 @@ return {
     ["@lsp.typemod.class.declaration"] = { fg = p.red },
     ["@lsp.typemod.interface.declaration"] = { fg = p.red },
     ["@lsp.typemod.variable.declaration"] = { fg = p.red },
-    ["@lsp.typemod.property"] = { fg = p.red },
+    ["@lsp.typemod.property"] = {},
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },

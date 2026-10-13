@@ -28,3 +28,12 @@
 (interface_declaration
   name: (type_identifier) @type.definition
   (#set! "priority" 110))
+
+; 只有 class 里的成员字段定义走红色；this.store / { type: } 仍是 @variable.member
+(public_field_definition
+  name: (property_identifier) @variable.member.definition
+  (#set! "priority" 130))
+
+(public_field_definition
+  name: (private_property_identifier) @variable.member.definition
+  (#set! "priority" 130))
